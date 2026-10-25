@@ -1,0 +1,19 @@
+[project]
+name = "electronic-inspection"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "SagaxMaxwell", email = "sagax.maxwell@gmail.com" }]
+requires-python = ">=3.14"
+dependencies = [
+    "cantools>=45.0.0",
+    "paramiko>=5.0.0",
+    "ping3>=5.1.6",
+]
+
+[project.scripts]
+electronic-inspection = "electronic_inspection:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
